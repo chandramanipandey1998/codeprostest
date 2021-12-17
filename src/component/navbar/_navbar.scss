@@ -1,0 +1,114 @@
+@import '../../app';
+
+.navbar-wrapper{
+    width: 100%;
+    background-color: #ffff;
+    padding: 20px 100px;
+    @include tablet{
+        padding: 20px 50px;
+    }
+    @include mobile{
+        padding: 10px 30px;
+    }
+    &-container{
+      
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+
+        &-left{
+            width: 30%;
+            display: flex;
+            align-items: center;
+            &-menubar{
+                padding-right: 10px;
+                font-size: 30px;
+                cursor: pointer;
+                display: none;
+                @include tablet{
+                    display: block;
+                }
+                @include mobile{
+                    display: block;
+                }
+            }
+           
+            
+            @include tablet {
+              width:50%  
+            }
+            @include mobile{
+                width: 100%;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+            }
+
+          
+           
+
+
+        }
+        &-right{
+           width: 100%;
+           @include mobile{
+               display: none;
+           }
+            &-item{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &-navlink{
+                    display: flex;
+                    cursor: pointer;
+                   
+                    align-items: center;
+                    list-style: none;
+                    li{
+                        padding-right: 30px;
+                        color:#272D4E;
+
+                    }
+                    @include tablet{
+                        display: none;
+                    }
+                    @include mobile{
+                        display: none;
+                    }
+
+                }
+                &-right{
+                    display: flex;
+                    align-items: center;
+                    &-col1{
+                        padding-right: 20px;
+                        
+                        @include tablet{
+                            display: none;
+                        }
+                       
+
+                    }
+                    &-col2{
+                        .btnStart{
+                            padding: 10px 20px;
+                           
+                            background-color: #ffff;
+                            box-sizing: border-box;
+                            border-radius: 5px;
+                            border:1px solid  #EDE7DE;
+                            color: rgba(240, 182, 102, 1);
+                            font-weight: 600;
+                            font-size: 16px;
+                            cursor: pointer;
+
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+    
+}

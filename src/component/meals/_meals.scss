@@ -1,0 +1,42 @@
+@import '../../app';
+.meals-wrapper{width: 100%;
+    padding: 40px 100px;
+    @include mobile{
+        padding: 10px 30px;
+    }
+
+    &-container{
+        display: flex;
+        justify-content: space-between;
+        @include mobile{
+            flex-direction: column-reverse;
+        }
+        &-col1{
+            width: 45%;
+            padding-right: 40px;
+            @include mobile{
+                width: 100%;
+                padding: 20px 0;
+            }
+
+          h1{
+              @include mobile{
+                  font-size: 30px;
+              }
+          }
+
+            p{
+                margin-top: 20px;
+                color: #6C747D;
+            }
+
+        }
+        &-col2{
+            width: 50%;
+            @include mobile{
+                width: 100%;
+            }
+
+        }
+    }
+}

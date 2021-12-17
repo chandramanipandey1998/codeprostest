@@ -1,0 +1,54 @@
+@import '../../app';
+.chooseUs-wrapper{
+    width: 100%;
+    padding: 40px 100px;
+    @include mobile{
+        padding: 10px 30px;
+    }
+    &-container{
+        display: flex;
+        justify-content: space-between;
+        @include mobile{
+            display: block;
+        }
+        
+        &-col1{
+            width: 45%;
+            @include mobile{
+                width: 100%;
+                padding: 20px 0;
+            }
+
+        }
+        &-col2{
+            width: 50%;
+            h1{
+                @include mobile{
+                    font-size: 30px;
+                    text-align: center;
+                }
+            }
+            @include mobile{
+                width: 100%;
+            }
+            &-disc{
+                margin-top: 20px;
+                .listing{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 10px;
+                }
+                li{
+                    list-style: none;
+                }
+                .tick{
+                    color: rgba(240, 182, 102, 1);
+                    margin-right: 5px;
+                    font-size: 20px;
+
+                }
+            }
+
+        }
+    }
+}

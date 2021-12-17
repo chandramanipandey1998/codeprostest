@@ -1,0 +1,61 @@
+.topmain-wrapper{
+    width: 100%;
+    background-color: #fffefc;
+    background-color: #fffbf4;
+    &-container{
+        display: flex;
+        width: 100%;
+        padding: 20px 70px;  
+        align-items: center;
+        &-left{
+            width: 50%;
+            &-heading{
+
+            }
+            &-note{
+                //height: 25px;
+                h5{
+                    
+                    animation-name: textzoom;
+                    animation-duration: 3s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: infinite;
+                    animation-direction: alternate;
+                }
+                @keyframes textzoom{
+                    0%{
+                        transform: scale(1);
+                        
+                    }
+                    100%{
+                        transform: scale(0);
+                    }
+                }
+
+            }
+            &-button{
+                margin-top: 30px;
+                .explore{
+                    padding: 10px 30px;
+                    background-color: transparent;
+                    border: 1px solid #ff9401;
+                    cursor: pointer;
+                    font-size: 20px;
+                    color: #ff9401;
+                    font-weight: 600;
+                    border-radius: 10px;
+
+                    &:hover{
+                        background-color: #ff9401;
+                        color: #ffff;
+                    }
+                }
+            }
+
+        }
+        &-right{
+            width: 50%;
+
+        }
+    }
+}

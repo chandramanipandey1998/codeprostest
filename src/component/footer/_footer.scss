@@ -1,0 +1,25 @@
+@import '../../app';
+.footer-wrapper{
+    width: 100%;
+    padding: 40px 100px;
+    &-container{
+        display: flex;
+        justify-content: space-between;
+        &-col1{
+            width: 20%;
+
+        }
+        &-col2{
+            width: 20%;
+
+        }
+        &-col3{
+            width: 20%;
+
+        }
+        &-col4{
+            width: 20%;
+
+        }
+    }
+}
