@@ -4,6 +4,9 @@
     @include mobile{
         padding: 10px 30px;
     }
+    @include tablet{
+        padding: 20px 70px;
+    }
 
     &-container{
         display: flex;
@@ -11,10 +14,17 @@
         @include mobile{
             flex-direction: column-reverse;
         }
+        @include tablet{
+            flex-direction: column;
+        }
         &-col1{
-            width: 45%;
+            width: 50%;
             padding-right: 40px;
             @include mobile{
+                width: 100%;
+                padding: 20px 0;
+            }
+            @include tablet{
                 width: 100%;
                 padding: 20px 0;
             }
@@ -23,6 +33,9 @@
               @include mobile{
                   font-size: 30px;
               }
+              @include tablet{
+                font-size: 32px;
+            }
           }
 
             p{
@@ -32,8 +45,11 @@
 
         }
         &-col2{
-            width: 50%;
+            width: 45%;
             @include mobile{
+                width: 100%;
+            }
+            @include tablet{
                 width: 100%;
             }
 

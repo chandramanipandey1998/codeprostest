@@ -1,12 +1,12 @@
 import React from 'react'
 import './_chooseUs.scss'
 import bowl from '../images/bowl.jpg'
-import { AiOutlineCheck } from 'react-icons/ai';
+import { AiOutlineCheck  } from 'react-icons/ai';
 
 export const WhyChooseUs = ({data}) => {
     return (
         <div className='chooseUs-wrapper'>
-            <div className='chooseUs-wrapper-container'>
+            <div className='chooseUs-wrapper-container' >
                 <div className='chooseUs-wrapper-container-col1'>
                 <img src={bowl} alt="imageBowl" width="100%" ></img>
 
@@ -24,6 +24,7 @@ export const WhyChooseUs = ({data}) => {
                             return <ul className='listing'>
                         <div className='tick'>
                         <AiOutlineCheck/>
+                       
                         </div>
                         <li>{note}</li>
                     </ul>
@@ -31,6 +32,10 @@ export const WhyChooseUs = ({data}) => {
                         })
                     }
 
+                    </div>
+
+                    <div className='chooseUs-wrapper-container-col2-button'>
+                    <button className='btnGetStart'>Get Started Now!</button>
                     </div>
                     
                     

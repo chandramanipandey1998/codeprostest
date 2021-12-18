@@ -5,11 +5,11 @@
     background-color: #ffff;
     padding: 20px 100px;
     @include tablet{
-        padding: 20px 50px;
+        padding: 20px 70px;
     }
     @include mobile{
-        padding: 10px 30px;
-        
+        padding: 10px 30px; 
+
     }
     &-container{
       
@@ -19,7 +19,7 @@
 
 
         &-left{
-            width: 30%;
+            width: 25%;
             display: flex;
             align-items: center;
             &-menubar{
@@ -44,6 +44,14 @@
                 flex-direction: row-reverse;
                 justify-content: space-between;
             }
+            // &-logo{
+            //    width: 100%;
+            //    h2{
+            //        @include tablet{
+            //            font-size: 26px;
+            //        }
+            //    }
+            // }
 
           
            
@@ -51,7 +59,7 @@
 
         }
         &-right{
-           width: 100%;
+           width: 75%;
            @include mobile{
                display: none;
            }

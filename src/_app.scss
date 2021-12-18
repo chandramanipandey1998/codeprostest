@@ -3,7 +3,7 @@
 @import './component/Abstract/mixin';
 @import './component/Abstract/variables';
 
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap');
+
 .background{
     @include mobile{
         display: none;
